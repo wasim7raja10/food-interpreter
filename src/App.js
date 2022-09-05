@@ -5,7 +5,7 @@ import { foodEmoji } from "./data/emoji";
 const emojis = Object.keys(foodEmoji);
 
 function App() {
-  const [emoji, setEmoji] = useState("empty");
+  const [emoji, setEmoji] = useState("");
   const [output, setOutput] = useState("Input is invalid");
   const onChangeHandler = (event) => {
     const inputEmoji = event.target.value;
