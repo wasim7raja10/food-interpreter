@@ -10,11 +10,11 @@ function App() {
   const onChangeHandler = (event) => {
     const inputEmoji = event.target.value;
     setEmoji(inputEmoji);
-    if (!(inputEmoji in Object.values(foodEmoji))) {
+    if (!(emoji in Object.values(foodEmoji))) {
       setOutput("Invalid Input");
       return;
     }
-    setOutput(foodEmoji[inputEmoji]);
+    setOutput(foodEmoji[emoji]);
   };
   const onClickHandler = (emoji) => {
     setEmoji(emoji);
